@@ -2,7 +2,7 @@
    <div class="counter">
     <h1>Counter</h1>
     <button class="text__red" v-on:click="decrement" :disabled="isDisabledDecrement">-</button>
-    <span v-bind:class="{text__green: counterGreen, text__red: counterRed}">{{counter}}</span>
+    <span class="number" v-bind:class="{text__green: counterGreen, text__red: counterRed}">{{counter}}</span>
     <button class="text__green" v-on:click="increment" :disabled="isDisabledIncrement">+</button>
     <form v-on:submit.prevent="handlerSubmit">
         <label> Enter number
@@ -13,6 +13,10 @@
 </template>
 
 <style>
+    .number{
+      font-weight: 700;
+    }
+
     .counter{
         max-width: 1200px;
         margin: 0 auto;

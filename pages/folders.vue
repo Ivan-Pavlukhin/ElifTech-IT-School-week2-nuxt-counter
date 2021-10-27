@@ -1,23 +1,16 @@
 <template>
    <div>
-    <h1>folders</h1>
-    <ul>
-      <li v-for="item of structure" :key="item.title">
-        <button v-if="item.folder" type="button">{{item.title}}</button>
-        </li>
-    </ul>
-    <button v-on:click="handlerClickFolder">click</button>
+    <h1 class="title">Home</h1>
   </div>
 </template>
 
-<script>
-import Vue from "vuetify"
-import Component from 'vue-class-component'
-
-@Component
-export default class Folders extends Vue {
-
- 
-}
-
-</script>
+<style>
+  .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: rgb(80, 240, 16)
+  }
+</style>

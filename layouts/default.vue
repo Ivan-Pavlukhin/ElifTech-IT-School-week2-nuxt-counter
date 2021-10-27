@@ -37,7 +37,7 @@ import Component from 'vue-class-component'
 export default class Header extends Vue {
   list = {
     folders: "/folders",
-    tanks: "/tanks",
+    array: "/array",
     counter: "/counter"
   }
 }
